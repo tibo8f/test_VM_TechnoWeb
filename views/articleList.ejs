@@ -1,0 +1,18 @@
+<h1>Liste des courses</h1>
+<ul>
+    <% for (let i = 0 ; i < articles.length ; i++) { %> 
+        <% if (articles[i].purchased == 1) { %> 
+            <li style ="text-decoration:line-through;">
+                <%= articles[i].name %> <%= articles[i].quantity %> 
+        
+            </li>
+        <% } else { %> 
+    <li>
+        <%= articles[i].name %> <%= articles[i].quantity %> 
+        <a href="/article/remove/<%= articles[i].idarticle %>">Effacer</a>
+        <a href="/article/update/<%= articles[i].idarticle %>">Acheté</a>
+
+    </li>
+    <% }} %> 
+</ul>
+<a href="/article/add">Ajouter un article</a>

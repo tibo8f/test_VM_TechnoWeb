@@ -1,0 +1,10 @@
+<h1>Modifier un article</h1>
+<form action="/article/update" method="POST">
+  Nom :
+  <input type="text" name="name" value="<%= name %>" /><br />
+  Quantitée :
+  <input type="text" name="quantity" value="<%= quantity %>" /><br />
+  <input type="hidden" name="idarticle" value="<%= idarticle %>" />
+  <input type="submit" name="save" value="Sauver" /><br />
+  <input type="submit" value="Retour à la liste" formaction="/article" />
+</form>

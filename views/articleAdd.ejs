@@ -1,0 +1,9 @@
+<h1>Ajouter un article</h1>
+<form action="/article/new" method="POST">
+  Nom :
+  <input type="text" name="name" value="<%= name %>" /><br />
+  Quantitée :
+  <input type="number" name="quantity" value="<%= quantity %>" /><br />
+  <input type="hidden" name="idarticle" value="<%= idarticle %>" />
+  <input type="submit" name="save" value="Sauver" /><br />
+</form>
