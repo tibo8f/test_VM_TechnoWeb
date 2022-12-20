@@ -4,7 +4,7 @@ let article = require('../models/articleModel');
 const router = require('../routes');
 
 let articleList = [];
-// Data base connection
+// Data base connectionq
 var mysql = require("mysql");
 
 var connection = mysql.createConnection({
